@@ -2,8 +2,8 @@
 
 |순번|함수명|설명|사용방법|
 |---|---|---|---|
-|1|groub by column1 column2| 기준 컬럼을 정해, 해당 기준으로 다중행 함수를 계산| select deptno, avg(sal) from scott.emp group by deptno;|
-|2|order by column1 column2| 기준 컬럼을 정해, 기준 컬럼 순서대로 결과값을 출력| select deptno, job, avg(sal) from scott.emp group by deptno, job deptno order by deptno, job;|
+|1|groub by column1 column2 having 조건| 기준 컬럼을 정해, 해당 기준으로 다중행 함수를 계산하되, having 이하 조건에 만족하는 결과를 출력| select deptno, avg(sal) from scott.emp group by deptno having avg(sal) >= 2000;|
+|2|order by column1 column2| 기준 컬럼을 정해, 기준 컬럼 순서대로 결과값을 출력| select deptno, job, avg(sal) from scott.emp group by deptno, job deptno having avg(sal) >= 2000 order by deptno, job;|
 
 *이 포스트는 개인이 공부한 내용을 기록하기 위함이니, 잘못된 내용이 있다면 의견 주세요. 검토 후 적극 반영하겠습니다. *
 
