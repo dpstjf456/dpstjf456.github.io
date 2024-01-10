@@ -2,11 +2,7 @@
 
 |순번|함수명|설명|사용방법|
 |---|---|---|---|
-|1|sum('option=distinct or ALL(default) columm)|columm로 입력된 다중행 데이터의 합을 계산| select sum(sal) from scott.emp;|
-|2|count('option=distinct or ALL(default) columm)|columm로 입력된 다중행 데이터의 수를 계산| select count(sal) from scott.emp;|
-|3|max('option=distinct or ALL(default) columm)|columm로 입력된 다중행 데이터 중 최댓값을 계산| select max(sal) from scott.emp;|
-|4|min('option=distinct or ALL(default) columm)|columm로 입력된 다중행 데이터 중 최솟값을 계산| select min(sal) from scott.emp;|
-|5|avg('option=distinct or ALL(default) columm)|columm로 입력된 다중행 데이터 중 평균값을 계산| select avg(sal) from scott.emp;|
+|1|groub by절)| 기준 컬럼을 정해, 해당 기준으로 다중행 함수를 계산| select avg(sal), deptno from scott.emp group by deptno;|
 
 
 *이 포스트는 개인이 공부한 내용을 기록하기 위함이니, 잘못된 내용이 있다면 의견 주세요. 검토 후 적극 반영하겠습니다. *
