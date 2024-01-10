@@ -3,3 +3,26 @@
 블로그 주소: https://dpstjf456.github.io/
 
 테스트입니다.
+
+
+cd desktop/github
+
+git add .
+
+git commit -m ""
+
+git push origin master
+
+git pull origin master
+git fetch origin
+
+**
+git remote -v
+
+ git remote add pb(name of remote) https://github.com/paulboone/ticgit
+
+git remote show
+
+git remote rename (origin) (replace)
+
+git remote remove (name of remote)
